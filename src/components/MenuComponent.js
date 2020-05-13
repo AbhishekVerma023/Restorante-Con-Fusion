@@ -1,5 +1,6 @@
 
 import React, { Component } from 'react';
+import DishDetail from './DishdetailComponent';
 /*
 import { Media } from 'reactstrap';
 
@@ -92,7 +93,7 @@ class Menu extends Component {
     onDishSelect(dish) {
         this.setState({ selectedDish: dish});
     }
-
+    /*
     renderDish(dish) {
         if (dish != null)
             return(
@@ -109,7 +110,7 @@ class Menu extends Component {
                 <div></div>
             );
     }
-
+    */
     render() {
         const menu = this.props.dishes.map((dish) => {
             return (
@@ -128,13 +129,9 @@ class Menu extends Component {
         return (
             <div className="container">
                 <div className="row">
-                    {menu}
+                    {menu}    
                 </div>
-                <div className="row">
-                  <div  className="col-12 m-1">
-                    {this.renderDish(this.state.selectedDish)}
-                  </div>
-                </div>
+                <DishDetail dish={this.state.selectedDish} />
             </div>
         );
     }
