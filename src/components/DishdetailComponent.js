@@ -48,7 +48,7 @@ class DishDetail extends Component {
 
     render() {
         return (
-            <div>
+            <div className="container">
                 {this.renderDish()}
             </div>
         
