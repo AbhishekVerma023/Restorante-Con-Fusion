@@ -7,3 +7,5 @@ To view the website simply copy the "json-server" folder.
 Navigate to json-server folder in your command prompt and type the following command
 -  ```json-server --watch db.json -d 2000 -p 3001```
 The complete website will be running on ```localhost:3001```
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
